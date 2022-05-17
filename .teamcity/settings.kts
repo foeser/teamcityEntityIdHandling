@@ -1,4 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.*
+import projectA.ProjectA
+import projectB.ProjectB
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -25,5 +27,8 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2022.04"
 
 project {
-    description = "Showcases Entity id handling in Kotlin DSL"
+    description = "Showcases Entity id handling in Kotlin DSL in regards to certain lazy initialization on specific functions"
+
+    subProject(ProjectB())
+    subProject(ProjectA())
 }
