@@ -4,8 +4,8 @@ import commons.GlobalVariables
 import jetbrains.buildServer.configs.kotlin.BuildType
 import jetbrains.buildServer.configs.kotlin.triggers.finishBuildTrigger
 
-class ProjectBBuildTypeA : BuildType ({
-    name = "BuildType A"
+class BuildTypeB : BuildType ({
+    name = "BuildType B"
     // uncommenting this would result in 'kotlin.UninitializedPropertyAccessException: lateinit property projectABuildTypeAId has not been initialized'
     //description = "I have a dependency on ${GlobalVariables.projectABuildTypeAId.value}"
 

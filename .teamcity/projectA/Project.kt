@@ -6,7 +6,7 @@ import jetbrains.buildServer.configs.kotlin.Project
 class ProjectA : Project({
     name = "Project A"
 
-    val buildTypeA = ProjectABuildTypeA()
+    val buildTypeA = BuildTypeA()
     buildType(buildTypeA)
     GlobalVariables.projectABuildTypeAId = buildTypeA.id!!
 })
